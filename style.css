@@ -1,0 +1,65 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  background-color: #111;
+  box-shadow: 0 2px 10px rgba(248, 107, 107, 0.3);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #a45af3, #25cafc);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content {
+  padding: 5rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+}
